@@ -14,7 +14,7 @@ read -p 'x-ui or marzban? [x/m] : ' xm
 
 
 if [[ "$xm" == "m" || "$xm" == "M" ]]; then
-ZIP="zip -r /root/ac-backup.zip /root/marzban/* /var/lib/marzban/*"
+ZIP="zip -r /root/ac-backup.zip /opt/marzban/* /var/lib/marzban/*"
 ACLover="marzban backup"
 elif [[ "$xm" == "x" || "$xm" == "X" ]]; then
 ZIP="zip /root/ac-backup.zip /etc/x-ui/x-ui.db /usr/local/x-ui/bin/config.json"
